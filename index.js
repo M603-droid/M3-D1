@@ -3,6 +3,8 @@
 1)
 Create a function to calculate the sum of the two given integers. If the two values are same, then returns triple their sum.
 */
+console.log("---------------EXERCISE-1------------------------------")
+
 const sumOfNumbers = function (a, b) {
     let result = 0
     if (a === b) {
@@ -19,22 +21,66 @@ console.log(sumOfNumbers(5, 5))
 2)
 Create a function to check two given numbers and return true if one of the number is 50 or if their sum is 50.
 */
+console.log("---------------EXERCISE-2------------------------------")
+const checkTheSum = function (a, b) {
+    let number;
+
+    if ((a + b) === 50) {
+        number = true;
+
+    }
+    else if (((a) === 50) || ((b) === 50)) {
+        number = true;
+    } else {
+        return false;
+    }
+    return number
+}
+
+console.log(checkTheSum(10, 10))
 
 /*
 3)
+
 Create a function to remove a character at the specified position of a given string and return the new string.
 */
+console.log("---------------EXERCISE-3------------------------------")
 
+const oldString = function (string, position) {
+    let newString = string.slice(0, position) + string.slice(position + 1)
+    return newString;
+}
+console.log(oldString("StriveSchool", 2))
 /*
 
 4)
  Create a function to find the largest of three given integers.
+
 */
+console.log("---------------EXERCISE-4------------------------------")
+const findLargestNumber = function (n1, n2, n3) {
+    let theNumber = n1 > n2 ? (n1 > n3 ? n1 : n3) : (n2 > n3 ? n2 : n3);
+    return theNumber;
+
+}
+
+console.log(findLargestNumber(11, 52, 23))
 
 /*
 5)
 Create a function to check whether two numbers are in range 40..60 or in the range 70..100 inclusive.
 */
+console.log("---------------EXERCISE-5------------------------------")
+const findTheNumber = function (n1, n2) {
+
+    let newNumber = (n1 >= 40 && n1 <= 60 && n2 >= 40 && n2 <= 60) ||
+        (n1 >= 70 && n1 <= 100 && n2 >= 70 && n2 <= 100)
+    return newNumber;
+
+}
+console.log(findTheNumber(43, 55))
+console.log(findTheNumber(79, 199))
+
 
 /*
 6)
