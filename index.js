@@ -147,12 +147,13 @@ Create a function to test whether an array of integers of length 2 does not cont
 console.log("-------------------------EXERCISE-10------------------------------------------------")
 
 const newArrayOfIntegers = function (array) {
-    return newArrayOfIntegers !== arrayOfInteger()
+    let cum = array !== arrayOfInteger()
+    return cum;
 }
-console.log(newArrayOfIntegers(1, 3))
+console.log(newArrayOfIntegers(6, 6))
 console.log(newArrayOfIntegers(5, 1))
 console.log(newArrayOfIntegers(6, 3))
-console.log(newArrayOfIntegers(6, 6))
+console.log(newArrayOfIntegers(1, 6))
 
 
 /*
@@ -163,7 +164,6 @@ Create a function to find the longest string from a given array of strings.*/
 console.log("-------------------------EXERCISE-11------------------------------------------------")
 
 const longestString = function () {
-
 }
 /*
 12)
@@ -195,7 +195,19 @@ Create a function to create new string with first 3 characters are in lower case
 /*18)
 
 Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.*/
+console.log("-------------------------EXERCISE-5-------------------------------------------------")
+const findTheNumber = function (n1, n2) {
+
+    let newNumber = (n1 >= 40 && n1 <= 60 && n2 >= 40 && n2 <= 60) ||
+        (n1 >= 70 && n1 <= 100 && n2 >= 70 && n2 <= 100)
+    return newNumber;
+
+}
+console.log(findTheNumber(43, 55))
+console.log(findTheNumber(79, 199))
+
 /*
+
 19)
 
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
